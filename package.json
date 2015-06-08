@@ -1,0 +1,29 @@
+{
+  "name": "handlebar-user-helpers",
+  "version": "0.1.0",
+  "description": "Handlebar Helpers for Taplytics' Push Notification service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/jest-cli/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taplytics/handlebar-user-helpers.git"
+  },
+  "keywords": [
+    "handlebars"
+  ],
+  "author": "Nima Gardideh <nima@halfmoon.ws>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taplytics/handlebar-user-helpers/issues"
+  },
+  "homepage": "https://github.com/taplytics/handlebar-user-helpers",
+  "dependencies": {
+    "lodash": "^3.9.3"
+  },
+  "devDependencies": {
+    "jest": "^0.1.40",
+    "jest-cli": "^0.4.8"
+  }
+}
