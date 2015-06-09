@@ -1,7 +1,7 @@
 var _ = require('lodash');
+var path = require('path');
 
-
-var helpers = [
+var helperNames = [
     'default',
     'first_name',
     'last_name',
@@ -9,9 +9,16 @@ var helpers = [
     'name'
 ];
 
+var helpers = {};
+
+_.each(helperNames, function(helperName) {
+	var helperPath = path.join(__dirname, 'helpers', helperName);
+	helpers[helperName] = require(helperPath);
+});
+
 module.exports = function (Handlebars) {
-    _.each(helpers, function(helperName) {
-        var helperFunc = require('./helpers/' + helperName);
+    _.each(helperNames, function(helperName) {
+        var helperFunc = helpers[helperName];
 
         Handlebars.registerHelper(helperName, helperFunc);
     });

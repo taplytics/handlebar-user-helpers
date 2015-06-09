@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/taplytics/handlebar-user-helpers",
   "dependencies": {
-    "lodash": "^3.9.3"
+    "lodash": "^3.9.3",
+    "path": "^0.11.14"
   },
   "devDependencies": {
     "jest": "^0.1.40",
