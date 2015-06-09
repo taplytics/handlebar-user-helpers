@@ -1,6 +1,6 @@
 {
   "name": "handlebar-user-helpers",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Handlebar Helpers for Taplytics' Push Notification service.",
   "main": "index.js",
   "scripts": {

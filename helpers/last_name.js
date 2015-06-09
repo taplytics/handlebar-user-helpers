@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 module.exports = function(defaultValue) {
     var val = null;
     
@@ -7,6 +9,9 @@ module.exports = function(defaultValue) {
         else
             val = getFirstName(this.user.name);
     }
+
+    if (_.isObject(defaultValue)) // we're getting `this` as the defaultValue since there was no input.
+        defaultValue = null;    
 
     return val ? val : defaultValue;
 };
